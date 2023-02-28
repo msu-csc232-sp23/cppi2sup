@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Dog {
+    {abstract} bark() : void
+}
+
+class GreatDaehn {
+    bark() : void
+}
+
+class Yorkie {
+    bark() : void
+}
+
+Dog <|-- Yorkie
+Dog <|-- GreatDaehn
+
+
+@enduml
